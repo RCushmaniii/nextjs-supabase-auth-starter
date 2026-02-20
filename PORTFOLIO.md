@@ -1,46 +1,14 @@
 ---
-# =============================================================================
-# PORTFOLIO.md — Next.js Supabase Auth Starter
-# =============================================================================
-
+# === CONTROL FLAGS ===
 portfolio_enabled: true
 portfolio_priority: 7
 portfolio_featured: false
-portfolio_last_reviewed: "2025-12-31"
 
+# === CARD DISPLAY ===
 title: "Next.js Supabase Auth Starter"
 tagline: "Production-ready authentication starter with Next.js 14 and Supabase"
 slug: "nextjs-supabase-auth-starter"
-
 category: "Templates"
-target_audience: "Developers building SaaS applications with modern auth requirements"
-tags:
-  - "nextjs"
-  - "supabase"
-  - "authentication"
-  - "starter-template"
-  - "typescript"
-
-thumbnail: ""
-hero_images: []
-demo_video_url: ""
-
-live_url: ""
-case_study_url: ""
-
-problem_solved: |
-  Setting up authentication in Next.js apps takes 10-20 hours of development time.
-  Developers face complex decisions around session management, email verification,
-  OAuth providers, and security best practices. Every project starts from scratch.
-
-key_outcomes:
-  - "Production-ready auth setup in under 10 minutes"
-  - "Email/password, magic link, and OAuth (Google, GitHub) out of the box"
-  - "Row-level security (RLS) policies configured"
-  - "Protected routes and middleware configured"
-  - "Email templates for verification and password reset"
-  - "TypeScript throughout with full type safety"
-
 tech_stack:
   - "Next.js 14"
   - "TypeScript"
@@ -48,8 +16,19 @@ tech_stack:
   - "Tailwind CSS"
   - "Server Components"
 
-complexity: "Production"
+# === DETAIL PAGE ===
 
+# === LINKS ===
+demo_url: ""
+live_url: ""
+
+# === OPTIONAL ===
+tags:
+  - "nextjs"
+  - "supabase"
+  - "authentication"
+  - "starter-template"
+  - "typescript"
 ---
 
 ## Overview
