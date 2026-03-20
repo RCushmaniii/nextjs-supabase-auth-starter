@@ -445,6 +445,26 @@ const dict = {
     en: '— Robert Cushman, Product Engineer',
     es: '— Robert Cushman, Product Engineer'
   },
+  serviceUnavailableTitle: {
+    en: 'Sign-in is temporarily unavailable',
+    es: 'El inicio de sesión no está disponible temporalmente'
+  },
+  serviceUnavailableBody: {
+    en: "We're experiencing a service interruption. This is usually resolved quickly. If the issue persists, let the developer know.",
+    es: 'Estamos experimentando una interrupción del servicio. Generalmente se resuelve rápido. Si el problema persiste, notifica al desarrollador.'
+  },
+  notifyDeveloper: {
+    en: 'Notify developer',
+    es: 'Notificar al desarrollador'
+  },
+  notifyDeveloperSent: {
+    en: 'Notification sent — thank you!',
+    es: 'Notificación enviada — ¡gracias!'
+  },
+  tryAgain: {
+    en: 'Try again',
+    es: 'Intentar de nuevo'
+  },
   alreadySignedInTitle: {
     en: "You're already signed in",
     es: 'Ya has iniciado sesión'

@@ -40,7 +40,8 @@ export async function signInWithEmail(formData: FormData) {
 
   if (error) {
     console.error('[sign-in] Supabase OTP error:', error.message);
-    redirect('/sign-in?error=auth_failed');
+    const isNetwork = error.message === 'Network error' || error.message === 'fetch failed';
+    redirect(`/sign-in?error=${isNetwork ? 'service_unavailable' : 'auth_failed'}`);
   }
 
   redirect('/sign-in?check_email=1');

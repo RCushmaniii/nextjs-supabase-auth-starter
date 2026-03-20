@@ -3,6 +3,7 @@ import { getLang, t } from "@/lib/i18n";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 
 import { signInWithEmail } from "./actions";
+import { NotifyDeveloperButton } from "./notify-button";
 
 export default async function SignInPage({
   searchParams,
@@ -13,13 +14,16 @@ export default async function SignInPage({
   const error =
     typeof searchParams.error === "string" ? searchParams.error : undefined;
   const checkEmail = searchParams.check_email === "1";
+  const isServiceDown = error === "service_unavailable";
 
   const errorMessage =
     error === "invalid_email"
       ? t(lang, "invalidEmail")
-      : error
-        ? t(lang, "authFailed")
-        : null;
+      : error === "service_unavailable"
+        ? null // handled separately
+        : error
+          ? t(lang, "authFailed")
+          : null;
 
   // Check if user is already authenticated
   const supabase = createSupabaseServerClient();
@@ -58,6 +62,37 @@ export default async function SignInPage({
                 {t(lang, "signOut")}
               </button>
             </form>
+          </div>
+        </div>
+      </main>
+    );
+  }
+
+  if (isServiceDown) {
+    return (
+      <main className="mx-auto max-w-xl px-6 pb-8 pt-8 sm:pt-12">
+        <div className="mt-6 w-full rounded-xl border border-neutral-200 bg-white p-6 shadow-sm">
+          <h1 className="text-2xl font-semibold">
+            {t(lang, "serviceUnavailableTitle")}
+          </h1>
+          <p className="mt-3 text-sm text-neutral-700">
+            {t(lang, "serviceUnavailableBody")}
+          </p>
+
+          <div className="mt-6">
+            <NotifyDeveloperButton
+              labels={{
+                notify: t(lang, "notifyDeveloper"),
+                sent: t(lang, "notifyDeveloperSent"),
+                tryAgain: t(lang, "tryAgain"),
+              }}
+            />
+          </div>
+
+          <div className="mt-6">
+            <Link href="/" className="text-sm text-neutral-700 underline">
+              {t(lang, "back")}
+            </Link>
           </div>
         </div>
       </main>
