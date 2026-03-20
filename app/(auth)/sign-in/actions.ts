@@ -33,9 +33,13 @@ export async function signInWithEmail(formData: FormData) {
     options: {
       emailRedirectTo: `${origin}/auth/callback`
     }
+  }).catch((err: unknown) => {
+    console.error('[sign-in] Network error calling Supabase:', err);
+    return { error: { message: 'Network error' } as const };
   });
 
   if (error) {
+    console.error('[sign-in] Supabase OTP error:', error.message);
     redirect('/sign-in?error=auth_failed');
   }
 

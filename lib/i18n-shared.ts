@@ -444,6 +444,18 @@ const dict = {
   aboutBuilderSignature: {
     en: '— Robert Cushman, Product Engineer',
     es: '— Robert Cushman, Product Engineer'
+  },
+  alreadySignedInTitle: {
+    en: "You're already signed in",
+    es: 'Ya has iniciado sesión'
+  },
+  alreadySignedInBody: {
+    en: 'Your session is active. You can go to the app or sign out to switch accounts.',
+    es: 'Tu sesión está activa. Puedes ir a la app o cerrar sesión para cambiar de cuenta.'
+  },
+  goToApp: {
+    en: 'Go to App',
+    es: 'Ir a la App'
   }
 } as const;
 
