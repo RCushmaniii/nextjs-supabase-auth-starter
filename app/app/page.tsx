@@ -62,7 +62,7 @@ export default async function AppHomePage() {
           </div>
           <div className="grid grid-cols-[140px_1fr] gap-3">
             <dt className="text-neutral-600">{t(lang, 'userId')}</dt>
-            <dd className="font-mono text-xs">{user?.id ?? t(lang, 'unknown')}</dd>
+            <dd className="font-mono text-sm">{user?.id ?? t(lang, 'unknown')}</dd>
           </div>
           <div className="grid grid-cols-[140px_1fr] gap-3">
             <dt className="text-neutral-600">{t(lang, 'role')}</dt>
@@ -70,7 +70,7 @@ export default async function AppHomePage() {
           </div>
           <div className="grid grid-cols-[140px_1fr] gap-3">
             <dt className="text-neutral-600">{t(lang, 'serverTime')}</dt>
-            <dd className="font-mono text-xs">{serverTime}</dd>
+            <dd className="font-mono text-sm">{serverTime}</dd>
           </div>
         </dl>
       </div>
@@ -79,7 +79,7 @@ export default async function AppHomePage() {
         <div className="flex items-start justify-between gap-4">
           <div className="space-y-1">
             <h2 className="text-sm font-semibold">{t(lang, 'notesTitle')}</h2>
-            <p className="text-xs text-neutral-600">{t(lang, 'notesSubtitle')}</p>
+            <p className="text-sm text-neutral-600">{t(lang, 'notesSubtitle')}</p>
           </div>
         </div>
 

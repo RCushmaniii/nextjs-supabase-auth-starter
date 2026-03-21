@@ -37,6 +37,11 @@ export default function AboutPage() {
         </div>
 
         <div>
+          <h2 className="text-sm font-semibold">{t(lang, 'aboutSessionTitle')}</h2>
+          <p className="mt-2 text-sm text-neutral-700">{t(lang, 'aboutSessionBody')}</p>
+        </div>
+
+        <div>
           <h2 className="text-sm font-semibold">{t(lang, 'aboutTechStackTitle')}</h2>
           <p className="mt-2 text-sm text-neutral-700">{t(lang, 'aboutTechStackBody')}</p>
         </div>

@@ -106,7 +106,7 @@ export default async function SignInPage({
           <div>
             <h1 className="text-2xl font-semibold">{t(lang, 'signInTitle')}</h1>
             <p className="mt-2 text-sm text-neutral-700">{t(lang, 'signInIntro')}</p>
-            <p className="mt-2 text-xs text-neutral-600">{t(lang, 'signInNote')}</p>
+            <p className="mt-2 text-sm text-neutral-600">{t(lang, 'signInNote')}</p>
           </div>
         </div>
 

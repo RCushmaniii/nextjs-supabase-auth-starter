@@ -433,6 +433,14 @@ const dict = {
     en: 'EN/ES via cookie + translation keys',
     es: 'EN/ES via cookie + llaves de traducción'
   },
+  aboutSessionTitle: {
+    en: 'Session duration',
+    es: 'Duración de la sesión'
+  },
+  aboutSessionBody: {
+    en: 'After signing in, your session stays active as long as you are using the app. Each page load refreshes your session automatically via server-side middleware. If you remain inactive, your access token expires after 1 hour — at which point you will need to request a new magic link. Signing out ends the session immediately.',
+    es: 'Después de iniciar sesión, tu sesión permanece activa mientras uses la app. Cada carga de página refresca tu sesión automáticamente a través del middleware del servidor. Si permaneces inactivo, tu token de acceso expira después de 1 hora — momento en el cual necesitarás solicitar un nuevo enlace mágico. Cerrar sesión termina la sesión inmediatamente.'
+  },
   aboutBuilderTitle: {
     en: 'From the builder',
     es: 'Del builder'

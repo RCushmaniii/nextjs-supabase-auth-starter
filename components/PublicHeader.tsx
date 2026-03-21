@@ -20,7 +20,7 @@ export function PublicHeader({ lang }: { lang: Lang }) {
   return (
     <header className="border-b border-neutral-200 bg-white">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center gap-2 text-sm font-semibold">
+        <Link href="/" className="flex items-center gap-2 text-sm font-semibold transition-colors hover:text-[#ff6a3d]">
           <span className="h-2 w-2 rounded-full bg-[#ff6a3d]" aria-hidden="true" />
           CushLabs.ai <span className="font-normal text-neutral-500">Magic Link</span>
         </Link>
