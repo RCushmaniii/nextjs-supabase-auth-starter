@@ -46,12 +46,12 @@ const dict = {
     es: 'Producto'
   },
   footerTagline: {
-    en: 'Built by Robert Cushman for builders who want real auth + real database security.',
-    es: 'Construido por Robert Cushman para builders que quieren auth real + seguridad real en la base de datos.'
+    en: 'Passwordless authentication for builders who want real auth + real database security.',
+    es: 'Autenticación sin contraseña para builders que quieren auth real + seguridad real en la base de datos.'
   },
-  copyright: {
-    en: '© 2025 CushLabs.ai. All rights reserved.',
-    es: '© 2025 CushLabs.ai. Todos los derechos reservados.'
+  allRightsReserved: {
+    en: 'All rights reserved.',
+    es: 'Todos los derechos reservados.'
   },
   signInTitle: {
     en: 'Sign in',

@@ -22,7 +22,7 @@ export function PublicHeader({ lang }: { lang: Lang }) {
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-2 text-sm font-semibold">
           <span className="h-2 w-2 rounded-full bg-[#ff6a3d]" aria-hidden="true" />
-          CushLabs.ai
+          CushLabs.ai <span className="font-normal text-neutral-500">Magic Link</span>
         </Link>
 
         <nav className="hidden items-center gap-6 sm:flex">
@@ -95,7 +95,7 @@ export function PublicHeader({ lang }: { lang: Lang }) {
         <div className="flex items-center justify-between border-b border-neutral-200 px-6 py-4">
           <div className="flex items-center gap-2 text-sm font-semibold">
             <span className="h-2 w-2 rounded-full bg-[#ff6a3d]" aria-hidden="true" />
-            CushLabs.ai
+            CushLabs.ai <span className="font-normal text-neutral-500">Magic Link</span>
           </div>
           <button
             type="button"
