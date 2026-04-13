@@ -484,6 +484,10 @@ const dict = {
   goToApp: {
     en: 'Go to App',
     es: 'Ir a la App'
+  },
+  signedInAs: {
+    en: 'Signed in as',
+    es: 'Sesión iniciada como'
   }
 } as const;
 

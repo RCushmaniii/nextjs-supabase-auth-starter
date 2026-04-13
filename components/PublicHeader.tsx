@@ -8,7 +8,7 @@ import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 import type { Lang } from '@/lib/i18n-shared';
 import { t } from '@/lib/i18n-shared';
 
-export function PublicHeader({ lang }: { lang: Lang }) {
+export function PublicHeader({ lang, userEmail }: { lang: Lang; userEmail?: string }) {
   const pathname = usePathname();
   const nextPath = pathname || '/';
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -45,6 +45,12 @@ export function PublicHeader({ lang }: { lang: Lang }) {
               {t(lang, 'github')}
             </a>
           </div>
+
+          {userEmail && (
+            <span className="border-l border-neutral-200 pl-4 text-xs text-neutral-500" title={userEmail}>
+              {userEmail.length > 24 ? `${userEmail.slice(0, 24)}…` : userEmail}
+            </span>
+          )}
 
           <LanguageSwitcher lang={lang} nextPath={nextPath} />
         </nav>
@@ -148,6 +154,12 @@ export function PublicHeader({ lang }: { lang: Lang }) {
               {t(lang, 'github')}
             </a>
           </div>
+
+          {userEmail && (
+            <div className="border-t border-neutral-200 pt-4 text-xs text-neutral-500">
+              {t(lang, 'signedInAs')} {userEmail}
+            </div>
+          )}
 
           <div className="border-t border-neutral-200 pt-4">
             <LanguageSwitcher lang={lang} nextPath={nextPath} />
